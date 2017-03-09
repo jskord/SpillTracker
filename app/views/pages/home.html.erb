@@ -1,0 +1,97 @@
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+            <a class="brand" href="/">
+                <img src='/assets/logo.jpeg'/>
+            </a>
+            <div class="nav-collapse collapse">
+                <% if current_user %>
+                    <p style="color:red;"> Welcome <%= current_user.name %></p>
+                <% end %> 
+                <ul class="nav pull-right">
+                    <li><a href="/map">View Map</a></li>
+                    <% if current_user %>
+                        <li><a class="btn-header" href="/logout">Logout</a></li>
+                    <% else %>
+                        <li><a class="btn-header" href="/sign-up">Signup</a></li>
+                        <li><a class="btn-header" href="/sign-in">Login</a></li>
+                    <% end %>
+                </ul>
+            </div>
+        </div>
+      </div>
+    </div>
+
+<div id="pictures">
+
+    <section id="feature_slider" class="">
+        <!-- 
+            Each slide is composed by <img> and .info
+            - .info's position is customized with css in index.css
+            - each <img> parallax effect is declared by the following params inside its class:
+            
+            example: class="asset left-472 sp600 t120 z3"
+            left-472 means left: -472px from the center
+            sp600 is speed transition
+            t120 is top to 120px
+            z3 is z-index to 3
+            Note: Maintain this order of params
+
+            For the backgrounds, you can combine from the bgs folder :D
+        -->
+        <article class="slide" id="showcasing" style="background: url('https://e5d1b366-a-62cb3a1a-s-sites.googlegroups.com/site/jskordimages/Screen%20Shot%202017-01-24%20at%206.14.53%20PM.png?attachauth=ANoY7cqZnvU70m_J7dxUCMcWcY-Ql1wl3cPgfyQJORDeN43YGGW3JwgiQN3m8CWqZCjqIL1_et_DtZPcpmGRgCEf_bjIN6lHhj-hOeUa7MEP7tGfOlxoyA7PmRiPeZyOfKydI4xNG7chkYwbyeC-r7NuxAfSCovvGuxBrRiS7d9goR88KOZrwcs5XqMjFT2fnCZV4dQ6JOYgIwfS7M4yyIC5HQhJj9Vf0HOXJ850mMSyud3bofQO_Fub4bIIg7UXCCsNZFXpbSon&attredirects=0') repeat-x top center;">
+            <div class="info">
+            
+            </div>
+        </article>
+        <article class="slide" id="showcasing" style="background: url('https://e5d1b366-a-62cb3a1a-s-sites.googlegroups.com/site/jskordimages/chart/Screen%20Shot%202017-01-24%20at%207.03.13%20PM.png?attachauth=ANoY7cqwq1PcX_2tK7ZdE4Kdr0nFv_Gdqq4nSLFjL1h70pODRiGlNsbUEQjNpEP1Q15SFM1ju0pkJfwh9o43--nQhdy417raBL9Uj5NlMQzMqCR-5ozYTEu4BrbK_ghxPJOGP-H6tabcsa8Q28NoUCSaWFqBhXkeLtoFbpiWAYBCasT_6ojp2bluPNHCC3y39v4HbgDc6VFOfGr7-jjY403At1B3BcNjdCIx9Fd7ONLFtnJWs45UZC_KzdXSU1LYtWe7Wdl0Y3Dl&attredirects=0') repeat-x top center;">
+            <div class="info">
+            
+            </div>
+        </article> 
+        <article class="slide" id="showcasing" style="background: url('https://e5d1b366-a-62cb3a1a-s-sites.googlegroups.com/site/jskordimages/chart/Screen%20Shot%202017-01-24%20at%206.59.43%20PM.png?attachauth=ANoY7crWF3rwEjiclUYjrAj1R7jSSjYYuxfuqTazYazdc69jvMOfvPw6kw740uAqhgkLYIapR92Ja_Af5WGspw367TLoq4gPIl46prAvR_qprIUog8kKZAaMhBUHEQgvsenuGhzB_0qoMZOAVayCh4STcUYAgvFgYSR1gHHKR46rJZ6JQ1LtjE4fi7TiaooclCcty7orGFk-hmucGs0zPYGC4v5TbxUYoNqeMWK-JYR2FODpIBlWuLiDJ56dFlSbY2xSxPAVrkXc&attredirects=0') repeat-x top center;">
+            <div class="info">
+            
+            </div>
+        </article>
+        <article class="slide" id="showcasing" style="background: url('https://e5d1b366-a-62cb3a1a-s-sites.googlegroups.com/site/jskordimages/chart/Screen%20Shot%202017-01-24%20at%207.07.38%20PM.png?attachauth=ANoY7cppqZvzDMSbnvQTRo35zf0yQqSVMqwR8EYjc0nEYDOyZqcAxufCwewioWBrCJdw8k7mzi1D_DgyUDFm8AY3trvZczJJR94HgwrBlXWimV95PH2hKm-IPQJEdA7FdgPAmS67BrfwUUinHEpLo9mwAyooWoxXvhF4LTfX6LplbcC6skiVTXfXcEBaBfnjqeorZ268eicgu4KEokZfVP3I5Ea96wB-fLrkiLq1h6Yo6trwPWy-RyeKlk26YOY4vvtajXGPyxNF&attredirects=0') repeat-x top center;">
+            <div class="info">
+            
+            </div>
+        </article>
+
+
+    </section>
+<table>
+<tr>
+<td><h2>Bakken SpillMapr provides user-friendly and up-to-date information on environmental spills in North Dakota, home of the world-famous Bakken oil-field.</h2></td>
+<td><img class="image" style="width: 800px; height: 400px; margin: 0 auto" src="/assets/BakkenIMG.jpeg"/></td>
+</tr>
+<tr>
+<td><h2>In the last 10 years the Bakken has seen a sharp increase in oil drilling activity, which has led to a sharp increase in spill activity.  The graph to the right shows how the number of spills reported in the State has increased since the boom in oil activity.</h2></td>
+<td><div id="container" style="width: 800px; height: 400px; margin: 0 auto"></div></td>
+</tr>
+<tr>
+    <td><h2 width = "500px">This website pulls data from the State of North Dakota Environmental Incident Report database, shown to the right:</h2></td>
+    <td><object width="1000" height="500" data="http://www.ndhealth.gov/EHS/FOIA/Spills"></object><td>
+</tr>
+<tr>
+    <td><h2 width = "500px">Bakken SpillMapr is a much more user friendly and interactive interface for the data. The site’s main goal is to increase public knowledge and exchange of information concerning spills that happen in regions with increased oil production, such as the Bakken.</h2></td>
+    <td><object width="800" height="500" data="https://e5d1b366-a-62cb3a1a-s-sites.googlegroups.com/site/jskordimages/Screen%20Shot%202017-01-24%20at%206.14.53%20PM.png?attachauth=ANoY7cqZnvU70m_J7dxUCMcWcY-Ql1wl3cPgfyQJORDeN43YGGW3JwgiQN3m8CWqZCjqIL1_et_DtZPcpmGRgCEf_bjIN6lHhj-hOeUa7MEP7tGfOlxoyA7PmRiPeZyOfKydI4xNG7chkYwbyeC-r7NuxAfSCovvGuxBrRiS7d9goR88KOZrwcs5XqMjFT2fnCZV4dQ6JOYgIwfS7M4yyIC5HQhJj9Vf0HOXJ850mMSyud3bofQO_Fub4bIIg7UXCCsNZFXpbSon&attredirects=0"></object><td>
+</tr>
+
+</table>
+
+
+
+
+
+
+
+ 
+
+
+
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+

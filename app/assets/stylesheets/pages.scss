@@ -1,0 +1,45 @@
+// Place all the styles related to the Pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+#pictures {
+  padding-top: 125px;
+}
+
+#map {
+  height: 1000;
+  border: 2px solid black;
+  width: 100%;
+  align: center;
+}
+
+.intro1 {
+  width: 700px;
+  align: left;
+  float: left
+}
+
+.posts {
+  width: 500px
+}
+
+.my-class input {
+  float: left;
+}
+
+.my-class label {
+  float: left;
+}
+
+.image {
+  align: center
+}
+
+td {
+  padding-bottom:75px
+}
+
+#mapPosts {
+  padding-left:50px
+}
